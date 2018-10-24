@@ -1,6 +1,6 @@
 'use strict'
 let favorightPet = prompt('Guess if dog is my favoright pet?')
-if (favorightPet.toLocaleLowerCase() === 'yes' || favorightPet.toLocaleUpperCase() == 'YES'){
+if (favorightPet.toLocaleLowerCase() === 'yes' || favorightPet.toLocaleUpperCase() === 'YES'){
  alert('Great! you got it right Dog is my favoright Pet')
 } else {
   alert('Don\'t lose hope try again')
@@ -26,6 +26,14 @@ alert('No! I do\'t have that many kids')
 } else {
   alert('You Got it right i don\'t have 3 kids')
 }
+let myclass = confirm('Are you enjoying the class?')
+if(myclass){
+console.log(myclass)
+alert('That\'s great keep pushing')
+} else {
+  alert('Ask questions and read more then you will enjoy it')
+}
+
 
 
 
