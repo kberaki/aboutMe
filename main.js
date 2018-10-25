@@ -1,38 +1,43 @@
-// 'use strict'
+ 'use strict'
 let correct = 0
-// let favorightPet = prompt('Guess if dog is my favoright pet?')
-// if (favorightPet.toLocaleLowerCase() === 'yes' || favorightPet.toLocaleUpperCase() === 'YES'){
-//  alert('Great! you got it right Dog is my favoright Pet')
-//  } else {
-//   alert('Don\'t lose hope try again') }
-// let myfavoriteClub = prompt('Do you think Arsenal is my Team?')
-// if (myfavoriteClub.toLocaleLowerCase() ==='yes' || myfavoriteClub.toLocaleUpperCase()==='YES'){
-//  alert('Yes! Arsenal will always be my team')
-//  } else{
-//  alert('I feel sorry for you!')
-//  }
+let favorightPet = prompt('Guess if dog is my favoright pet?')
+if (favorightPet.toLocaleLowerCase() === 'yes' || favorightPet.toLocaleUpperCase() === 'YES'){
+ alert('Great! you got it right Dog is my favoright Pet')
+ correct++
+ } else {
+  alert('Don\'t lose hope try again') }
+let myfavoriteClub = prompt('Do you think Arsenal is my Team?')
+if (myfavoriteClub.toLocaleLowerCase() ==='yes' || myfavoriteClub.toLocaleUpperCase()==='YES'){
+ alert('Yes! Arsenal will always be my team')
+ correct++
+ } else{
+ alert('I feel sorry for you!')
+ }
 
-//  let bestCity = confirm('Washington DC is the Best 5th city to live in USA')
+let bestCity = confirm('Washington DC is the Best 5th city to live in USA')
 
-//   if(bestCity){ 
-//   alert('Yes Washington DC is the best 5th state to live')
-//   } else {
-//  alert('No accourding to google.com washington DC is the best 5th city')
-//   }
-// let myKids = confirm('I have have 3 kids? click ok for yes cancel for no')
-// if(myKids){
-// console.log(myKids)
-// alert('No! I do\'t have that many kids')
-// } else {
-//   alert('You Got it right i don\'t have 3 kids')
-// }
-// let myclass = confirm('Are you enjoying the class?')
-// if(myclass){
-// console.log(myclass)
-// alert('That\'s great keep pushing')
-// } else {
-//   alert('Ask questions and read more then you will enjoy it')
-// }
+     if(bestCity){ 
+  alert('Yes Washington DC is the best 5th state to live')
+  correct++
+  } else {
+ alert('No accourding to google.com washington DC is the best 5th city')
+  }
+let myKids = confirm('I have have 3 kids? click ok for yes cancel for no')
+if(myKids){
+console.log(myKids)
+alert('No! I do\'t have that many kids')
+} else {
+  alert('You Got it right i don\'t have 3 kids')
+  correct++
+}
+let myclass = confirm('Are you enjoying the class?')
+if(myclass){
+console.log(myclass)
+alert('That\'s great keep pushing')
+correct++
+} else {
+  alert('Ask questions and read more then you will enjoy it')
+}
 
 
 
@@ -69,51 +74,50 @@ if(favoriteHero.toLocaleLowerCase() === 'tanos' || favoriteHero.toLocaleUpperCas
 //   console.log('index is now', i)
 //   console.log('for loop is now', heroArray[i] )
 // } 
-// let classArray = ['0', '1', '2', '3']
+let classArray = ['0', '1', '2', '3']
 
-// for(let i = 0; i < classArray.length; i++ ){
-// let class1 = prompt('Guess how many students are in my coding class?')
-// if(class1 == 7){
-//   alert('Great job, you guessed it right')
-//   correct++
-//   break
-// }
-// else if(class1>7){
-//   alert('your number is too high! you have only' + ' ' +  ((classArray.length - 1) - (i)) + ' chances')
+for(let i = 0; i < classArray.length; i++ ){
+let class1 = prompt('Guess how many students are in my coding class?')
+if(class1 == 7){
+  alert('Great job, you guessed it right')
+  correct++
+  break
+}
+else if(class1>7){
+  alert('your number is too high! you have only' + ' ' +  ((classArray.length - 1) - (i)) + ' chances')
   
-// } else if (class1<7) {
-//   alert(' your number is too low you have only' + (( classArray.length - 1 ) - (i)) + 'chances')
-// } else {
+} else if (class1<7) {
+  alert(' your number is too low you have only' + (( classArray.length - 1 ) - (i)) + 'chances')
+} else {
     
-// }
-// }
-//  let studentName = ['Simon' ,'Fitsum', 'kesete', 'solomon', 'ayale', 'Eyasu']
-// let i = 0
-// let counter=studentName.length
-
-// while(i<counter){
-//   let name = prompt('what are the name of my class mates from silverSpring?')
-// if(name.toLowerCase() == 'simon'|| name.toLowerCase() == 'ayale'){
-//   alert('That is right! the possible answers are ' + studentName )
-//   correct++
-//   break
-// } else {
-//   alert('Don\'s lose hope try again')
-// }
-// i++
-
-// }
-// alert ('You you have got ' + correct + ' questions correct out of 7' )
-
-
-let addFunc = function(){
-  return 1 +1
 }
-let subtractFunc = function(){
-  1 + 1
 }
-subtractFunc()
-addFunc()
+ let studentName = ['Simon' ,'Fitsum', 'kesete', 'solomon', 'ayale', 'Eyasu']
+let i = 0
+let counter=studentName.length
+
+while(i<counter){
+  let name = prompt('what are the name of my class mates from silverSpring?')
+if(name.toLowerCase() == 'simon'|| name.toLowerCase() == 'ayale'){
+  alert('That is right! the possible answers are ' + studentName )
+  correct++
+  break
+} else {
+  alert('Don\'s lose hope try again')
+}
+i++
+
+}
+alert (' Good Job, you have got ' + correct + ' questions correct out of 7' )
+
+// let addFunc = function(){
+//   return 1 +1
+// }
+// let subtractFunc = function(){
+//   1 + 1
+// }
+// subtractFunc()
+// addFunc()
 
 // while (!correctAnswer){
 //   let thanosBirthplace = confirm ('is this cool')
