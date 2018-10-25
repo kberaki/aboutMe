@@ -4,3 +4,10 @@ h1{
 p{
   color: blue
 }
+ol{
+  background-color: blueviolet;
+  color: blanchedalmond
+}
+ul{
+  background-color: aquamarine
+}
